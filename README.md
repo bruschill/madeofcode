@@ -19,3 +19,22 @@ To install:
 4. Pick **madeofcode** from the scheme dropdown and apply.
 
 It's a dark scheme (parented on Darcula), so it inherits Darcula for any UI elements not explicitly themed.
+
+## kitty
+
+A matching color scheme for the [kitty](https://sw.kovidgoyal.net/kitty/) terminal emulator lives in `kitty/madeofcode.conf`.
+
+To install, copy it into your kitty config directory and include it:
+
+```sh
+cp kitty/madeofcode.conf ~/.config/kitty/
+```
+
+Then add to `~/.config/kitty/kitty.conf`:
+
+```conf
+include madeofcode.conf
+```
+
+Reload with `ctrl+shift+f5` (or restart kitty) to apply.
+
