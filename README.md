@@ -5,16 +5,11 @@ The TextMate theme madeofcode, reproduced across editors, terminals, and tools.
 
 ## At a glance
 
-A dark theme on a deep indigo background with vivid, high-contrast accents:
-
-| | | | | | |
-|---|---|---|---|---|---|
-| ![](https://placehold.co/24/090a1b/090a1b.png) `#090a1b` bg | ![](https://placehold.co/24/f8f8f8/f8f8f8.png) `#f8f8f8` fg | ![](https://placehold.co/24/ff3854/ff3854.png) `#ff3854` red | ![](https://placehold.co/24/8fff58/8fff58.png) `#8fff58` green | ![](https://placehold.co/24/0a9cff/0a9cff.png) `#0a9cff` blue | ![](https://placehold.co/24/f1d950/f1d950.png) `#f1d950` yellow |
-
-The same accents in the [colorblind-safe variants](#accessibility) that every port ships:
+A dark theme on a deep indigo background with vivid, high-contrast accents. The [colorblind-safe variants](#accessibility) that every port ships remap the same accents:
 
 | Variant | bg | fg | red | green | blue | yellow |
 |---|---|---|---|---|---|---|
+| **default** | ![](https://placehold.co/24/090a1b/090a1b.png) `#090a1b` | ![](https://placehold.co/24/f8f8f8/f8f8f8.png) `#f8f8f8` | ![](https://placehold.co/24/ff3854/ff3854.png) `#ff3854` | ![](https://placehold.co/24/8fff58/8fff58.png) `#8fff58` | ![](https://placehold.co/24/0a9cff/0a9cff.png) `#0a9cff` | ![](https://placehold.co/24/f1d950/f1d950.png) `#f1d950` |
 | **protan** | ![](https://placehold.co/24/090a1b/090a1b.png) `#090a1b` | ![](https://placehold.co/24/f8f8f8/f8f8f8.png) `#f8f8f8` | ![](https://placehold.co/24/ffc21f/ffc21f.png) `#ffc21f` | ![](https://placehold.co/24/e8e6de/e8e6de.png) `#e8e6de` | ![](https://placehold.co/24/2f7bff/2f7bff.png) `#2f7bff` | ![](https://placehold.co/24/b07400/b07400.png) `#b07400` |
 | **tritan** | ![](https://placehold.co/24/090a1b/090a1b.png) `#090a1b` | ![](https://placehold.co/24/f8f8f8/f8f8f8.png) `#f8f8f8` | ![](https://placehold.co/24/ff3854/ff3854.png) `#ff3854` | ![](https://placehold.co/24/4fd06a/4fd06a.png) `#4fd06a` | ![](https://placehold.co/24/ff7ab0/ff7ab0.png) `#ff7ab0` | ![](https://placehold.co/24/ff9d33/ff9d33.png) `#ff9d33` |
 
@@ -54,10 +49,10 @@ Copy `vim/colors/madeofcode.vim` into `~/.vim/colors/` (or `~/.config/nvim/color
 
 Two accessibility variants live alongside the main scheme, derived from it so they stay in sync:
 
-- `vim/colors/madeofcode-protan.vim` — tuned for **protanopia** (red-blindness). The signature red keywords become bright amber (red renders as a near-invisible gray to protanopes), and syntax roles are re-encoded onto the blue↔yellow axis plus lightness.
-- `vim/colors/madeofcode-tritan.vim` — tuned for **tritanopia** (blue-blindness). The red keyword, green string, and magenta comment are kept (those hues survive), while the blue family is rotated onto pink/orange/teal so it no longer collapses into one color.
+- `vim/colors/madeofcode-protan.vim` — for **protanopia** (red-blindness).
+- `vim/colors/madeofcode-tritan.vim` — for **tritanopia** (blue-blindness).
 
-Copy the one you want into your colors directory and set `colorscheme madeofcode-protan` (or `madeofcode-tritan`). See [Accessibility](#accessibility) for the palette details.
+Copy the one you want into your colors directory and set `colorscheme madeofcode-protan` (or `madeofcode-tritan`). See [Accessibility](#accessibility) for how each variant remaps the palette, and why.
 
 > **Every other port ships the same two variants.** Alongside each `madeofcode.*` file there is a `madeofcode-protan.*` and a `madeofcode-tritan.*` (e.g. `zed/madeofcode-protan.json`, `kitty/madeofcode-tritan.conf`, `iterm2/madeofcode-protan.itermcolors`). Install them exactly like the base theme in each section below, just using the variant filename. They share the same remapped palette, so the colorblind-safe choices are consistent across every editor, terminal, and tool.
 
@@ -299,9 +294,7 @@ The full palette shared across every editor, terminal, and tool.
 
 ### Accessibility
 
-The default palette leans on the red↔green and blue↔cyan↔teal contrasts that colorblindness collapses, so the [colorblind-safe variants](#colorblind-safe-variants) re-encode syntax roles onto whichever axis each deficiency preserves. Both are derived from the canonical Vim colorscheme, and the same remapping is applied across **every port** — each one ships a `-protan` and `-tritan` file next to its base theme (including the ANSI palettes for terminals and the status-message backgrounds in the richer editor themes).
-
-The role → color remapping is shown below.
+The default palette leans on the red↔green and blue↔cyan↔teal contrasts that colorblindness collapses, so the [colorblind-safe variants](#colorblind-safe-variants) re-encode syntax roles onto whichever axis each deficiency preserves. Both are derived from the canonical Vim colorscheme, and the same remapping is applied across **every port** — each one ships a `-protan` and `-tritan` file next to its base theme (including the ANSI palettes for terminals and the status-message backgrounds in the richer editor themes). The full role-by-role remapping:
 
 **Protanopia** (red-blindness) — red renders as a near-invisible gray, so keywords move to bright amber and roles ride the blue↔yellow axis plus lightness:
 
