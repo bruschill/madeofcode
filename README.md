@@ -1,8 +1,7 @@
 madeofcode
 ==========
 
-The TextMate theme madeofcode, reproduced across editors, terminals, and tools —
-with minor tweaks for Ruby.
+The TextMate theme madeofcode, reproduced across editors, terminals, and tools.
 
 ## At a glance
 
@@ -11,6 +10,13 @@ A dark theme on a deep indigo background with vivid, high-contrast accents:
 | | | | | | |
 |---|---|---|---|---|---|
 | ![](https://placehold.co/24/090a1b/090a1b.png) `#090a1b` bg | ![](https://placehold.co/24/f8f8f8/f8f8f8.png) `#f8f8f8` fg | ![](https://placehold.co/24/ff3854/ff3854.png) `#ff3854` red | ![](https://placehold.co/24/8fff58/8fff58.png) `#8fff58` green | ![](https://placehold.co/24/0a9cff/0a9cff.png) `#0a9cff` blue | ![](https://placehold.co/24/f1d950/f1d950.png) `#f1d950` yellow |
+
+The same accents in the [colorblind-safe variants](#accessibility) that every port ships:
+
+| Variant | bg | fg | red | green | blue | yellow |
+|---|---|---|---|---|---|---|
+| **protan** | ![](https://placehold.co/24/090a1b/090a1b.png) `#090a1b` | ![](https://placehold.co/24/f8f8f8/f8f8f8.png) `#f8f8f8` | ![](https://placehold.co/24/ffc21f/ffc21f.png) `#ffc21f` | ![](https://placehold.co/24/e8e6de/e8e6de.png) `#e8e6de` | ![](https://placehold.co/24/2f7bff/2f7bff.png) `#2f7bff` | ![](https://placehold.co/24/b07400/b07400.png) `#b07400` |
+| **tritan** | ![](https://placehold.co/24/090a1b/090a1b.png) `#090a1b` | ![](https://placehold.co/24/f8f8f8/f8f8f8.png) `#f8f8f8` | ![](https://placehold.co/24/ff3854/ff3854.png) `#ff3854` | ![](https://placehold.co/24/4fd06a/4fd06a.png) `#4fd06a` | ![](https://placehold.co/24/ff7ab0/ff7ab0.png) `#ff7ab0` | ![](https://placehold.co/24/ff9d33/ff9d33.png) `#ff9d33` |
 
 See the [full color breakdown](#color-breakdown) for the complete palette.
 
