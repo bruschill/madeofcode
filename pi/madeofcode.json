@@ -7,7 +7,6 @@
 		"bg2": "#1c1e30",
 		"bg3": "#363745",
 		"selection": "#05448d",
-		"search": "#233466",
 		"fg": "#f8f8f8",
 		"white": "#ffffff",
 		"gray": "#81818a",
@@ -22,8 +21,7 @@
 		"blue2": "#588aff",
 		"cyan": "#6fd3ff",
 		"lightblue": "#45c1ea",
-		"magenta": "#c050c2",
-		"pink": "#d97ddb"
+		"magenta": "#c050c2"
 	},
 	"colors": {
 		"accent": "cyan",
@@ -86,8 +84,8 @@
 		"bashMode": "orange"
 	},
 	"export": {
-		"pageBg": "#090a1b",
-		"cardBg": "#12152e",
-		"infoBg": "#1c1e30"
+		"pageBg": "bg",
+		"cardBg": "bg1",
+		"infoBg": "bg2"
 	}
 }
