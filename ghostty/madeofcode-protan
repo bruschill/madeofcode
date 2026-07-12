@@ -1,0 +1,36 @@
+# madeofcode-protan — color theme for Ghostty (colorblind-safe variant).
+# Derived from the madeofcode TextMate/Vim theme.
+# Install: copy to ~/.config/ghostty/themes/ and add `theme = madeofcode`
+# to your Ghostty config, or point `theme` at this file's absolute path.
+
+# -- Basic --
+background = #090a1b
+foreground = #f8f8f8
+
+# -- Cursor --
+cursor-color = #00ffff
+cursor-text = #090a1b
+
+# -- Selection --
+selection-background = #05448d
+selection-foreground = #f8f8f8
+
+# -- Normal colors (0-7) --
+palette = 0=#1c1e30
+palette = 1=#ffc21f
+palette = 2=#e8e6de
+palette = 3=#b07400
+palette = 4=#2f7bff
+palette = 5=#7d84b8
+palette = 6=#b9dcff
+palette = 7=#f8f8f8
+
+# -- Bright colors (8-15) --
+palette = 8=#81818a
+palette = 9=#a8863a
+palette = 10=#8fb4ff
+palette = 11=#d9a441
+palette = 12=#0a3d91
+palette = 13=#b0b4d8
+palette = 14=#9fd0ff
+palette = 15=#ffffff

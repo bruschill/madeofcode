@@ -1,0 +1,135 @@
+/*!
+ * madeofcode-protan (colorblind-safe variant) — Prism.js theme
+ * Source of truth: vim/colors/madeofcode.vim
+ * Usage: <link rel="stylesheet" href="madeofcode.css"> alongside prism.js.
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #f8f8f8;
+  background: none;
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  line-height: 1.5;
+  tab-size: 4;
+  hyphens: none;
+}
+
+pre[class*="language-"] {
+  padding: 1em;
+  margin: 0.5em 0;
+  overflow: auto;
+  border-radius: 6px;
+}
+
+pre[class*="language-"],
+:not(pre) > code[class*="language-"] {
+  background: #090a1b;
+}
+
+:not(pre) > code[class*="language-"] {
+  padding: 0.1em 0.3em;
+  border-radius: 0.3em;
+}
+
+::selection,
+pre[class*="language-"] ::selection {
+  background: #05448d;
+  color: #f8f8f8;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: #7d84b8;
+  font-style: italic;
+}
+
+.token.punctuation {
+  color: #f8f8f8;
+}
+
+.token.namespace {
+  opacity: 0.8;
+}
+
+.token.keyword,
+.token.operator,
+.token.important,
+.token.atrule .token.rule {
+  color: #ffc21f;
+}
+
+.token.string,
+.token.char,
+.token.attr-value {
+  color: #e8e6de;
+}
+
+.token.number,
+.token.boolean,
+.token.constant,
+.token.symbol {
+  color: #2f7bff;
+}
+
+.token.builtin {
+  color: #c9cbd6;
+}
+
+.token.class-name,
+.token.maybe-class-name {
+  color: #b9dcff;
+}
+
+.token.function {
+  color: #b9dcff;
+}
+
+.token.property,
+.token.variable {
+  color: #0a3d91;
+}
+
+.token.tag,
+.token.selector {
+  color: #9fd0ff;
+}
+
+.token.attr-name {
+  color: #9fd0ff;
+}
+
+.token.decorator,
+.token.annotation {
+  color: #b07400;
+}
+
+.token.regex {
+  color: #d9a441;
+}
+
+.token.url,
+.token.entity {
+  color: #2f7bff;
+}
+
+.token.deleted {
+  color: #ffc21f;
+}
+
+.token.inserted {
+  color: #8fb4ff;
+}
+
+.token.bold {
+  font-weight: bold;
+}
+
+.token.italic {
+  font-style: italic;
+}

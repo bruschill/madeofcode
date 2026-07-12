@@ -1,0 +1,49 @@
+# madeofcode-tritan — Alacritty color theme (colorblind-safe variant).
+# Derived from the madeofcode Vim/TextMate theme (ANSI palette matches kitty/ghostty).
+# Install: copy to ~/.config/alacritty/themes/ and add to alacritty.toml:
+#   [general]
+#   import = ["~/.config/alacritty/themes/madeofcode.toml"]
+
+[colors.primary]
+background = "#090a1b"
+foreground = "#f8f8f8"
+
+[colors.cursor]
+text = "#090a1b"
+cursor = "#00ffff"
+
+[colors.vi_mode_cursor]
+text = "#090a1b"
+cursor = "#e06a3a"
+
+[colors.selection]
+text = "#f8f8f8"
+background = "#05448d"
+
+[colors.search.matches]
+foreground = "#f8f8f8"
+background = "#233466"
+
+[colors.search.focused_match]
+foreground = "#090a1b"
+background = "#ff9d33"
+
+[colors.normal]
+black   = "#1c1e30"
+red     = "#ff3854"
+green   = "#4fd06a"
+yellow  = "#ff9d33"
+blue    = "#ff7ab0"
+magenta = "#c050c2"
+cyan    = "#00d3a0"
+white   = "#f8f8f8"
+
+[colors.bright]
+black   = "#81818a"
+red     = "#cf6a4c"
+green   = "#c7f06a"
+yellow  = "#cf9f5a"
+blue    = "#e06a3a"
+magenta = "#d97ddb"
+cyan    = "#3fd0b0"
+white   = "#ffffff"

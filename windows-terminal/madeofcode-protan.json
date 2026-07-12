@@ -1,0 +1,26 @@
+{
+  "name": "madeofcode protan",
+
+  "background": "#090A1B",
+  "foreground": "#F8F8F8",
+  "cursorColor": "#00FFFF",
+  "selectionBackground": "#05448D",
+
+  "black": "#1C1E30",
+  "red": "#ffc21f",
+  "green": "#e8e6de",
+  "yellow": "#b07400",
+  "blue": "#2f7bff",
+  "purple": "#7d84b8",
+  "cyan": "#b9dcff",
+  "white": "#F8F8F8",
+
+  "brightBlack": "#81818A",
+  "brightRed": "#a8863a",
+  "brightGreen": "#8fb4ff",
+  "brightYellow": "#d9a441",
+  "brightBlue": "#0a3d91",
+  "brightPurple": "#b0b4d8",
+  "brightCyan": "#9fd0ff",
+  "brightWhite": "#FFFFFF"
+}
