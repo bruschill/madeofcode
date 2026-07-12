@@ -1,0 +1,29 @@
+{
+  "name": "madeofcode",
+  "displayName": "madeofcode",
+  "description": "A dark theme on a deep indigo background with vivid, high-contrast accents. The TextMate theme madeofcode, reproduced for VS Code.",
+  "version": "1.0.0",
+  "publisher": "madeofcode",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.70.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "keywords": [
+    "theme",
+    "dark",
+    "color-theme",
+    "madeofcode"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "madeofcode",
+        "uiTheme": "vs-dark",
+        "path": "./themes/madeofcode-color-theme.json"
+      }
+    ]
+  }
+}
