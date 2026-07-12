@@ -1,0 +1,135 @@
+/*!
+ * madeofcode — Prism.js theme
+ * Source of truth: vim/colors/madeofcode.vim
+ * Usage: <link rel="stylesheet" href="madeofcode.css"> alongside prism.js.
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #f8f8f8;
+  background: none;
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  line-height: 1.5;
+  tab-size: 4;
+  hyphens: none;
+}
+
+pre[class*="language-"] {
+  padding: 1em;
+  margin: 0.5em 0;
+  overflow: auto;
+  border-radius: 6px;
+}
+
+pre[class*="language-"],
+:not(pre) > code[class*="language-"] {
+  background: #090a1b;
+}
+
+:not(pre) > code[class*="language-"] {
+  padding: 0.1em 0.3em;
+  border-radius: 0.3em;
+}
+
+::selection,
+pre[class*="language-"] ::selection {
+  background: #05448d;
+  color: #f8f8f8;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: #c050c2;
+  font-style: italic;
+}
+
+.token.punctuation {
+  color: #f8f8f8;
+}
+
+.token.namespace {
+  opacity: 0.8;
+}
+
+.token.keyword,
+.token.operator,
+.token.important,
+.token.atrule .token.rule {
+  color: #ff3854;
+}
+
+.token.string,
+.token.char,
+.token.attr-value {
+  color: #8fff58;
+}
+
+.token.number,
+.token.boolean,
+.token.constant,
+.token.symbol {
+  color: #0a9cff;
+}
+
+.token.builtin {
+  color: #99cf50;
+}
+
+.token.class-name,
+.token.maybe-class-name {
+  color: #6fd3ff;
+}
+
+.token.function {
+  color: #6fd3ff;
+}
+
+.token.property,
+.token.variable {
+  color: #588aff;
+}
+
+.token.tag,
+.token.selector {
+  color: #45c1ea;
+}
+
+.token.attr-name {
+  color: #45c1ea;
+}
+
+.token.decorator,
+.token.annotation {
+  color: #f1d950;
+}
+
+.token.regex {
+  color: #e9c062;
+}
+
+.token.url,
+.token.entity {
+  color: #0a9cff;
+}
+
+.token.deleted {
+  color: #ff3854;
+}
+
+.token.inserted {
+  color: #00ffbc;
+}
+
+.token.bold {
+  font-weight: bold;
+}
+
+.token.italic {
+  font-style: italic;
+}

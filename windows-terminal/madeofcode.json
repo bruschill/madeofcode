@@ -1,0 +1,26 @@
+{
+  "name": "madeofcode",
+
+  "background": "#090A1B",
+  "foreground": "#F8F8F8",
+  "cursorColor": "#00FFFF",
+  "selectionBackground": "#05448D",
+
+  "black": "#1C1E30",
+  "red": "#FF3854",
+  "green": "#8FFF58",
+  "yellow": "#F1D950",
+  "blue": "#0A9CFF",
+  "purple": "#C050C2",
+  "cyan": "#6FD3FF",
+  "white": "#F8F8F8",
+
+  "brightBlack": "#81818A",
+  "brightRed": "#CF6A4C",
+  "brightGreen": "#00FFBC",
+  "brightYellow": "#E9C062",
+  "brightBlue": "#588AFF",
+  "brightPurple": "#D97DDB",
+  "brightCyan": "#45C1EA",
+  "brightWhite": "#FFFFFF"
+}

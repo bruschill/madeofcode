@@ -1,0 +1,169 @@
+# madeofcode — Helix theme. Source of truth: vim/colors/madeofcode.vim.
+# Install: copy to ~/.config/helix/themes/ and set `theme = "madeofcode"`
+# in ~/.config/helix/config.toml.
+
+# -- Syntax --
+"comment" = { fg = "magenta", modifiers = ["italic"] }
+"comment.block.documentation" = { fg = "magenta_dim", modifiers = ["italic"] }
+
+"keyword" = "red"
+"keyword.control" = "red"
+"keyword.control.conditional" = "red"
+"keyword.control.import" = "red"
+"keyword.control.return" = "red"
+"keyword.operator" = "red"
+"keyword.storage" = "red"
+"keyword.storage.type" = "red"
+"keyword.storage.modifier" = "red"
+"keyword.directive" = "red"
+"operator" = "red"
+
+"keyword.control.repeat" = "cyan"
+"keyword.control.exception" = "cyan"
+
+"string" = "green"
+"string.regexp" = "gold"
+"string.special" = "blue"
+"string.special.path" = "blue"
+"string.special.url" = "blue_bright"
+"string.special.symbol" = "blue"
+"constant.character.escape" = "blue"
+
+"constant" = "teal"
+"constant.numeric" = "blue"
+"constant.numeric.integer" = "blue"
+"constant.numeric.float" = "blue"
+"constant.character" = "blue"
+"constant.builtin" = "blue"
+"constant.builtin.boolean" = "blue"
+
+"function" = "cyan"
+"function.builtin" = "cyan"
+"function.method" = "cyan"
+"function.macro" = "yellow"
+"function.special" = "yellow"
+
+"type" = "cyan"
+"type.builtin" = "cyan"
+"type.enum.variant" = "teal"
+"constructor" = "cyan"
+
+"variable" = "foreground"
+"variable.builtin" = "olive"
+"variable.parameter" = "blue_bright"
+"variable.other.member" = "blue_bright"
+
+"label" = "green"
+"namespace" = "cyan"
+
+"attribute" = "yellow"
+"tag" = "light_blue"
+"tag.builtin" = "light_blue"
+
+"punctuation" = "foreground"
+"punctuation.delimiter" = "foreground"
+"punctuation.bracket" = "foreground"
+"punctuation.special" = "red"
+
+"special" = "blue"
+
+# -- Markup --
+"markup.heading" = { fg = "cyan", modifiers = ["bold"] }
+"markup.heading.marker" = "gray"
+"markup.list" = "cyan"
+"markup.bold" = { fg = "yellow", modifiers = ["bold"] }
+"markup.italic" = { fg = "yellow", modifiers = ["italic"] }
+"markup.strikethrough" = { modifiers = ["crossed_out"] }
+"markup.link.url" = { fg = "blue", modifiers = ["underlined"] }
+"markup.link.text" = "blue"
+"markup.link.label" = "light_blue"
+"markup.quote" = { fg = "gray", modifiers = ["italic"] }
+"markup.raw" = "green"
+"markup.raw.inline" = "green"
+
+# -- Diff --
+"diff.plus" = "teal"
+"diff.minus" = "red"
+"diff.delta" = "blue"
+
+# -- UI --
+"ui.background" = { bg = "background" }
+"ui.background.separator" = { fg = "border" }
+"ui.text" = "foreground"
+"ui.text.focus" = { fg = "white", bg = "selection" }
+"ui.text.inactive" = "gray"
+"ui.text.info" = "gray"
+"ui.window" = { fg = "border" }
+"ui.cursor" = { fg = "background", bg = "cursor" }
+"ui.cursor.primary" = { fg = "background", bg = "cursor" }
+"ui.cursor.match" = { fg = "red", modifiers = ["bold"] }
+"ui.cursor.primary.insert" = { fg = "background", bg = "teal" }
+"ui.cursor.primary.select" = { fg = "background", bg = "blue_bright" }
+"ui.cursorline.primary" = { bg = "background_raised" }
+"ui.cursorcolumn.primary" = { bg = "background_raised" }
+"ui.selection" = { bg = "selection" }
+"ui.selection.primary" = { bg = "selection" }
+"ui.linenr" = { fg = "gray", bg = "background" }
+"ui.linenr.selected" = { fg = "foreground", bg = "background" }
+"ui.gutter" = { bg = "background" }
+"ui.virtual.whitespace" = "guide"
+"ui.virtual.indent-guide" = "guide"
+"ui.virtual.ruler" = { bg = "background_panel" }
+"ui.virtual.inlay-hint" = { fg = "gray", bg = "background_raised" }
+"ui.virtual.jump-label" = { fg = "yellow", modifiers = ["bold"] }
+"ui.statusline" = { fg = "foreground", bg = "background_panel" }
+"ui.statusline.inactive" = { fg = "gray", bg = "background_raised" }
+"ui.statusline.normal" = { fg = "background", bg = "blue" }
+"ui.statusline.insert" = { fg = "background", bg = "green" }
+"ui.statusline.select" = { fg = "background", bg = "blue_bright" }
+"ui.bufferline" = { fg = "gray", bg = "background_raised" }
+"ui.bufferline.active" = { fg = "foreground", bg = "background" }
+"ui.popup" = { fg = "foreground", bg = "background_raised" }
+"ui.popup.info" = { fg = "foreground", bg = "background_raised" }
+"ui.window.border" = { fg = "border" }
+"ui.help" = { fg = "foreground", bg = "background_raised" }
+"ui.menu" = { fg = "foreground", bg = "background_raised" }
+"ui.menu.selected" = { fg = "white", bg = "selection" }
+"ui.menu.scroll" = { fg = "gray", bg = "background_panel" }
+"ui.highlight" = { bg = "background_panel" }
+"ui.highlight.frameline" = { bg = "selection" }
+"ui.debug.breakpoint" = "red"
+"ui.debug.active" = "yellow"
+
+"diagnostic.error" = { underline = { color = "red", style = "curl" } }
+"diagnostic.warning" = { underline = { color = "yellow", style = "curl" } }
+"diagnostic.info" = { underline = { color = "blue", style = "curl" } }
+"diagnostic.hint" = { underline = { color = "teal", style = "curl" } }
+"diagnostic.unnecessary" = { modifiers = ["dim"] }
+"diagnostic.deprecated" = { modifiers = ["crossed_out"] }
+"error" = "red"
+"warning" = "yellow"
+"info" = "blue"
+"hint" = "teal"
+
+[palette]
+background = "#090a1b"
+background_raised = "#12152e"
+background_panel = "#1c1e30"
+border = "#363745"
+selection = "#05448d"
+search = "#233466"
+guide = "#353c4f"
+foreground = "#f8f8f8"
+white = "#ffffff"
+gray = "#81818a"
+red = "#ff3854"
+orange = "#cf6a4c"
+green = "#8fff58"
+olive = "#99cf50"
+teal = "#00ffbc"
+yellow = "#f1d950"
+gold = "#e9c062"
+blue = "#0a9cff"
+blue_bright = "#588aff"
+cyan = "#6fd3ff"
+light_blue = "#45c1ea"
+magenta = "#c050c2"
+magenta_dim = "#a046a2"
+pink = "#d97ddb"
+cursor = "#00ffff"
