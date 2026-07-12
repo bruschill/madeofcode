@@ -1,0 +1,49 @@
+# madeofcode-protan — Alacritty color theme (colorblind-safe variant).
+# Derived from the madeofcode Vim/TextMate theme (ANSI palette matches kitty/ghostty).
+# Install: copy to ~/.config/alacritty/themes/ and add to alacritty.toml:
+#   [general]
+#   import = ["~/.config/alacritty/themes/madeofcode.toml"]
+
+[colors.primary]
+background = "#090a1b"
+foreground = "#f8f8f8"
+
+[colors.cursor]
+text = "#090a1b"
+cursor = "#00ffff"
+
+[colors.vi_mode_cursor]
+text = "#090a1b"
+cursor = "#0a3d91"
+
+[colors.selection]
+text = "#f8f8f8"
+background = "#05448d"
+
+[colors.search.matches]
+foreground = "#f8f8f8"
+background = "#233466"
+
+[colors.search.focused_match]
+foreground = "#090a1b"
+background = "#b07400"
+
+[colors.normal]
+black   = "#1c1e30"
+red     = "#ffc21f"
+green   = "#e8e6de"
+yellow  = "#b07400"
+blue    = "#2f7bff"
+magenta = "#7d84b8"
+cyan    = "#b9dcff"
+white   = "#f8f8f8"
+
+[colors.bright]
+black   = "#81818a"
+red     = "#a8863a"
+green   = "#8fb4ff"
+yellow  = "#d9a441"
+blue    = "#0a3d91"
+magenta = "#b0b4d8"
+cyan    = "#9fd0ff"
+white   = "#ffffff"

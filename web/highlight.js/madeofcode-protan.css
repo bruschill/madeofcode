@@ -1,0 +1,129 @@
+/*!
+ * madeofcode-protan (colorblind-safe variant) — highlight.js theme
+ * Source of truth: vim/colors/madeofcode.vim
+ * Usage: <link rel="stylesheet" href="madeofcode.css"> alongside highlight.js.
+ */
+
+.hljs {
+  color: #f8f8f8;
+  background: #090a1b;
+}
+
+.hljs-comment,
+.hljs-quote {
+  color: #7d84b8;
+  font-style: italic;
+}
+
+.hljs-doctag {
+  color: #5a6088;
+  font-style: italic;
+}
+
+.hljs-keyword,
+.hljs-operator,
+.hljs-selector-pseudo,
+.hljs-keyword.hljs-type {
+  color: #ffc21f;
+}
+
+.hljs-string,
+.hljs-meta .hljs-string {
+  color: #e8e6de;
+}
+
+.hljs-number,
+.hljs-literal,
+.hljs-symbol,
+.hljs-bullet {
+  color: #2f7bff;
+}
+
+.hljs-variable.constant_,
+.hljs-variable.language_ {
+  color: #8fb4ff;
+}
+
+.hljs-title,
+.hljs-title.function_,
+.hljs-function .hljs-title {
+  color: #b9dcff;
+}
+
+.hljs-title.class_,
+.hljs-type,
+.hljs-class .hljs-title,
+.hljs-built_in {
+  color: #b9dcff;
+}
+
+.hljs-params {
+  color: #0a3d91;
+}
+
+.hljs-variable,
+.hljs-template-variable,
+.hljs-property,
+.hljs-attr {
+  color: #0a3d91;
+}
+
+.hljs-attribute,
+.hljs-selector-attr,
+.hljs-meta .hljs-keyword {
+  color: #b07400;
+}
+
+.hljs-name,
+.hljs-tag,
+.hljs-selector-tag {
+  color: #9fd0ff;
+}
+
+.hljs-selector-id,
+.hljs-selector-class {
+  color: #b9dcff;
+}
+
+.hljs-regexp {
+  color: #d9a441;
+}
+
+.hljs-meta {
+  color: #ffc21f;
+}
+
+.hljs-section,
+.hljs-title.markdown {
+  color: #b9dcff;
+  font-weight: bold;
+}
+
+.hljs-link {
+  color: #2f7bff;
+  text-decoration: underline;
+}
+
+.hljs-addition {
+  color: #8fb4ff;
+  background: #14161f80;
+}
+
+.hljs-deletion {
+  color: #ffc21f;
+  background: #2a220880;
+}
+
+.hljs-subst {
+  color: #f8f8f8;
+}
+
+.hljs-emphasis {
+  color: #b07400;
+  font-style: italic;
+}
+
+.hljs-strong {
+  color: #b07400;
+  font-weight: bold;
+}

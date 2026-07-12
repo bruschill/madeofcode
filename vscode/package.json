@@ -23,6 +23,16 @@
         "label": "madeofcode",
         "uiTheme": "vs-dark",
         "path": "./themes/madeofcode-color-theme.json"
+      },
+      {
+        "label": "madeofcode protan",
+        "uiTheme": "vs-dark",
+        "path": "./themes/madeofcode-protan-color-theme.json"
+      },
+      {
+        "label": "madeofcode tritan",
+        "uiTheme": "vs-dark",
+        "path": "./themes/madeofcode-tritan-color-theme.json"
       }
     ]
   }

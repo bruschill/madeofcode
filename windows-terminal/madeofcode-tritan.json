@@ -1,0 +1,26 @@
+{
+  "name": "madeofcode tritan",
+
+  "background": "#090A1B",
+  "foreground": "#F8F8F8",
+  "cursorColor": "#00FFFF",
+  "selectionBackground": "#05448D",
+
+  "black": "#1C1E30",
+  "red": "#ff3854",
+  "green": "#4fd06a",
+  "yellow": "#ff9d33",
+  "blue": "#ff7ab0",
+  "purple": "#c050c2",
+  "cyan": "#00d3a0",
+  "white": "#F8F8F8",
+
+  "brightBlack": "#81818A",
+  "brightRed": "#cf6a4c",
+  "brightGreen": "#c7f06a",
+  "brightYellow": "#cf9f5a",
+  "brightBlue": "#e06a3a",
+  "brightPurple": "#d97ddb",
+  "brightCyan": "#3fd0b0",
+  "brightWhite": "#FFFFFF"
+}

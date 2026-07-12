@@ -53,6 +53,8 @@ Two accessibility variants live alongside the main scheme, derived from it so th
 
 Copy the one you want into your colors directory and set `colorscheme madeofcode-protan` (or `madeofcode-tritan`). See [Accessibility](#accessibility) for the palette details.
 
+> **Every other port ships the same two variants.** Alongside each `madeofcode.*` file there is a `madeofcode-protan.*` and a `madeofcode-tritan.*` (e.g. `zed/madeofcode-protan.json`, `kitty/madeofcode-tritan.conf`, `iterm2/madeofcode-protan.itermcolors`). Install them exactly like the base theme in each section below, just using the variant filename. They share the same remapped palette, so the colorblind-safe choices are consistent across every editor, terminal, and tool.
+
 ### JetBrains IDEs
 
 Matching themes for IntelliJ IDEA, PyCharm, WebStorm, RubyMine, GoLand, and other JetBrains IDEs live in `jetbrains/`:
@@ -291,7 +293,9 @@ The full palette shared across every editor, terminal, and tool.
 
 ### Accessibility
 
-The default palette leans on the red↔green and blue↔cyan↔teal contrasts that colorblindness collapses, so the [colorblind-safe Vim variants](#colorblind-safe-variants) re-encode syntax roles onto whichever axis each deficiency preserves. Both are derived from the canonical Vim colorscheme.
+The default palette leans on the red↔green and blue↔cyan↔teal contrasts that colorblindness collapses, so the [colorblind-safe variants](#colorblind-safe-variants) re-encode syntax roles onto whichever axis each deficiency preserves. Both are derived from the canonical Vim colorscheme, and the same remapping is applied across **every port** — each one ships a `-protan` and `-tritan` file next to its base theme (including the ANSI palettes for terminals and the status-message backgrounds in the richer editor themes).
+
+The role → color remapping is shown below.
 
 **Protanopia** (red-blindness) — red renders as a near-invisible gray, so keywords move to bright amber and roles ride the blue↔yellow axis plus lightness:
 
