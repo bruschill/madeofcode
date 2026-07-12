@@ -19,3 +19,15 @@ To install:
 4. Pick **madeofcode** from the scheme dropdown and apply.
 
 It's a dark scheme (parented on Darcula), so it inherits Darcula for any UI elements not explicitly themed.
+
+## Pi
+
+A matching theme for the [Pi](https://github.com/earendil-works/pi) coding agent lives in `pi/madeofcode.json`.
+
+To install, copy it into Pi's themes directory:
+
+```sh
+cp pi/madeofcode.json ~/.pi/agent/themes/
+```
+
+Then select **madeofcode** as your theme in Pi. It reuses the same palette and syntax colors as the Vim and JetBrains schemes.
