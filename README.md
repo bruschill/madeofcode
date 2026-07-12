@@ -14,11 +14,44 @@ A dark theme on a deep indigo background with vivid, high-contrast accents:
 
 See the [full color breakdown](#color-breakdown) for the complete palette.
 
+## Contents
+
+- [Editors](#editors)
+  - [Vim](#vim)
+    - [Colorblind-safe variants](#colorblind-safe-variants)
+  - [JetBrains IDEs](#jetbrains-ides)
+  - [VS Code](#vs-code)
+  - [Sublime Text](#sublime-text)
+  - [Zed](#zed)
+  - [Helix](#helix)
+  - [Xcode](#xcode)
+  - [Eclipse](#eclipse)
+- [Terminals](#terminals)
+  - [kitty](#kitty)
+  - [Ghostty](#ghostty)
+  - [Alacritty](#alacritty)
+  - [iTerm2](#iterm2)
+  - [Windows Terminal](#windows-terminal)
+- [Tools](#tools)
+  - [Pi](#pi)
+- [Web](#web)
+- [Color breakdown](#color-breakdown)
+  - [Accessibility](#accessibility)
+
 ## Editors
 
 ### Vim
 
 Copy `vim/colors/madeofcode.vim` into `~/.vim/colors/` (or `~/.config/nvim/colors/`) and add `colorscheme madeofcode` to your config.
+
+#### Colorblind-safe variants
+
+Two accessibility variants live alongside the main scheme, derived from it so they stay in sync:
+
+- `vim/colors/madeofcode-protan.vim` — tuned for **protanopia** (red-blindness). The signature red keywords become bright amber (red renders as a near-invisible gray to protanopes), and syntax roles are re-encoded onto the blue↔yellow axis plus lightness.
+- `vim/colors/madeofcode-tritan.vim` — tuned for **tritanopia** (blue-blindness). The red keyword, green string, and magenta comment are kept (those hues survive), while the blue family is rotated onto pink/orange/teal so it no longer collapses into one color.
+
+Copy the one you want into your colors directory and set `colorscheme madeofcode-protan` (or `madeofcode-tritan`). See [Accessibility](#accessibility) for the palette details.
 
 ### JetBrains IDEs
 
@@ -255,3 +288,35 @@ The full palette shared across every editor, terminal, and tool.
 | ![](https://placehold.co/24/45c1ea/45c1ea.png) | `#45c1ea` | Light blue |
 | ![](https://placehold.co/24/c050c2/c050c2.png) | `#c050c2` | Magenta |
 | ![](https://placehold.co/24/d97ddb/d97ddb.png) | `#d97ddb` | Pink |
+
+### Accessibility
+
+The default palette leans on the red↔green and blue↔cyan↔teal contrasts that colorblindness collapses, so the [colorblind-safe Vim variants](#colorblind-safe-variants) re-encode syntax roles onto whichever axis each deficiency preserves. Both are derived from the canonical Vim colorscheme.
+
+**Protanopia** (red-blindness) — red renders as a near-invisible gray, so keywords move to bright amber and roles ride the blue↔yellow axis plus lightness:
+
+| Role | Default | Protan-safe |
+|---|---|---|
+| Keyword / Operator | ![](https://placehold.co/24/ff3854/ff3854.png) `#ff3854` | ![](https://placehold.co/24/ffc21f/ffc21f.png) `#ffc21f` |
+| Constant / Number | ![](https://placehold.co/24/0a9cff/0a9cff.png) `#0a9cff` | ![](https://placehold.co/24/2f7bff/2f7bff.png) `#2f7bff` |
+| Constant identifier | ![](https://placehold.co/24/00ffbc/00ffbc.png) `#00ffbc` | ![](https://placehold.co/24/8fb4ff/8fb4ff.png) `#8fb4ff` |
+| Type / Function / Tag | ![](https://placehold.co/24/6fd3ff/6fd3ff.png) `#6fd3ff` | ![](https://placehold.co/24/b9dcff/b9dcff.png) `#b9dcff` |
+| Instance / global var | ![](https://placehold.co/24/588aff/588aff.png) `#588aff` | ![](https://placehold.co/24/0a3d91/0a3d91.png) `#0a3d91` |
+| Decorator | ![](https://placehold.co/24/f1d950/f1d950.png) `#f1d950` | ![](https://placehold.co/24/b07400/b07400.png) `#b07400` |
+| String | ![](https://placehold.co/24/8fff58/8fff58.png) `#8fff58` | ![](https://placehold.co/24/e8e6de/e8e6de.png) `#e8e6de` |
+| Identifier | ![](https://placehold.co/24/99cf50/99cf50.png) `#99cf50` | ![](https://placehold.co/24/c9cbd6/c9cbd6.png) `#c9cbd6` |
+| Comment | ![](https://placehold.co/24/c050c2/c050c2.png) `#c050c2` | ![](https://placehold.co/24/7d84b8/7d84b8.png) `#7d84b8` |
+
+**Tritanopia** (blue-blindness) — the blue family collapses into one teal, so it rotates onto pink/orange/teal; red, green, and magenta survive and are kept:
+
+| Role | Default | Tritan-safe |
+|---|---|---|
+| Keyword / Operator | ![](https://placehold.co/24/ff3854/ff3854.png) `#ff3854` | ![](https://placehold.co/24/ff3854/ff3854.png) `#ff3854` |
+| String | ![](https://placehold.co/24/8fff58/8fff58.png) `#8fff58` | ![](https://placehold.co/24/4fd06a/4fd06a.png) `#4fd06a` |
+| Comment | ![](https://placehold.co/24/c050c2/c050c2.png) `#c050c2` | ![](https://placehold.co/24/c050c2/c050c2.png) `#c050c2` |
+| Type / Function / Tag | ![](https://placehold.co/24/6fd3ff/6fd3ff.png) `#6fd3ff` | ![](https://placehold.co/24/00d3a0/00d3a0.png) `#00d3a0` |
+| Constant / Number | ![](https://placehold.co/24/0a9cff/0a9cff.png) `#0a9cff` | ![](https://placehold.co/24/ff7ab0/ff7ab0.png) `#ff7ab0` |
+| Instance / global var | ![](https://placehold.co/24/588aff/588aff.png) `#588aff` | ![](https://placehold.co/24/e06a3a/e06a3a.png) `#e06a3a` |
+| Decorator | ![](https://placehold.co/24/f1d950/f1d950.png) `#f1d950` | ![](https://placehold.co/24/ff9d33/ff9d33.png) `#ff9d33` |
+| Constant identifier | ![](https://placehold.co/24/00ffbc/00ffbc.png) `#00ffbc` | ![](https://placehold.co/24/c7f06a/c7f06a.png) `#c7f06a` |
+| Identifier | ![](https://placehold.co/24/99cf50/99cf50.png) `#99cf50` | ![](https://placehold.co/24/a8c0a0/a8c0a0.png) `#a8c0a0` |
