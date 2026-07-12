@@ -31,3 +31,21 @@ cp pi/madeofcode.json ~/.pi/agent/themes/
 ```
 
 Then select **madeofcode** as your theme in Pi. It reuses the same palette and syntax colors as the Vim and JetBrains schemes.
+## kitty
+
+A matching color scheme for the [kitty](https://sw.kovidgoyal.net/kitty/) terminal emulator lives in `kitty/madeofcode.conf`.
+
+To install, copy it into your kitty config directory and include it:
+
+```sh
+cp kitty/madeofcode.conf ~/.config/kitty/
+```
+
+Then add to `~/.config/kitty/kitty.conf`:
+
+```conf
+include madeofcode.conf
+```
+
+Reload with `ctrl+shift+f5` (or restart kitty) to apply.
+
