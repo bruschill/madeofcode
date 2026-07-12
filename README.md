@@ -49,10 +49,10 @@ Copy `vim/colors/madeofcode.vim` into `~/.vim/colors/` (or `~/.config/nvim/color
 
 Two accessibility variants live alongside the main scheme, derived from it so they stay in sync:
 
-- `vim/colors/madeofcode-protan.vim` — tuned for **protanopia** (red-blindness). The signature red keywords become bright amber (red renders as a near-invisible gray to protanopes), and syntax roles are re-encoded onto the blue↔yellow axis plus lightness.
-- `vim/colors/madeofcode-tritan.vim` — tuned for **tritanopia** (blue-blindness). The red keyword, green string, and magenta comment are kept (those hues survive), while the blue family is rotated onto pink/orange/teal so it no longer collapses into one color.
+- `vim/colors/madeofcode-protan.vim` — for **protanopia** (red-blindness).
+- `vim/colors/madeofcode-tritan.vim` — for **tritanopia** (blue-blindness).
 
-Copy the one you want into your colors directory and set `colorscheme madeofcode-protan` (or `madeofcode-tritan`). See [Accessibility](#accessibility) for the palette details.
+Copy the one you want into your colors directory and set `colorscheme madeofcode-protan` (or `madeofcode-tritan`). See [Accessibility](#accessibility) for how each variant remaps the palette, and why.
 
 > **Every other port ships the same two variants.** Alongside each `madeofcode.*` file there is a `madeofcode-protan.*` and a `madeofcode-tritan.*` (e.g. `zed/madeofcode-protan.json`, `kitty/madeofcode-tritan.conf`, `iterm2/madeofcode-protan.itermcolors`). Install them exactly like the base theme in each section below, just using the variant filename. They share the same remapped palette, so the colorblind-safe choices are consistent across every editor, terminal, and tool.
 
@@ -294,9 +294,7 @@ The full palette shared across every editor, terminal, and tool.
 
 ### Accessibility
 
-The default palette leans on the red↔green and blue↔cyan↔teal contrasts that colorblindness collapses, so the [colorblind-safe variants](#colorblind-safe-variants) re-encode syntax roles onto whichever axis each deficiency preserves. Both are derived from the canonical Vim colorscheme, and the same remapping is applied across **every port** — each one ships a `-protan` and `-tritan` file next to its base theme (including the ANSI palettes for terminals and the status-message backgrounds in the richer editor themes).
-
-The role → color remapping is shown below.
+The default palette leans on the red↔green and blue↔cyan↔teal contrasts that colorblindness collapses, so the [colorblind-safe variants](#colorblind-safe-variants) re-encode syntax roles onto whichever axis each deficiency preserves. Both are derived from the canonical Vim colorscheme, and the same remapping is applied across **every port** — each one ships a `-protan` and `-tritan` file next to its base theme (including the ANSI palettes for terminals and the status-message backgrounds in the richer editor themes). The full role-by-role remapping:
 
 **Protanopia** (red-blindness) — red renders as a near-invisible gray, so keywords move to bright amber and roles ride the blue↔yellow axis plus lightness:
 
