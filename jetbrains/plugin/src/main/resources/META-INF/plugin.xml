@@ -1,0 +1,28 @@
+<idea-plugin>
+  <id>com.madeofcode.theme</id>
+  <name>madeofcode</name>
+  <version>1.0.0</version>
+  <vendor>madeofcode</vendor>
+
+  <description><![CDATA[
+    <p><b>madeofcode</b> — a dark theme on a deep indigo background with vivid,
+    high-contrast accents. Reproduces the TextMate theme madeofcode across
+    JetBrains IDEs, theming both the editor syntax and the full IDE UI.</p>
+    <p>After installing, select <b>madeofcode</b> under
+    <b>Settings &rarr; Appearance &amp; Behavior &rarr; Appearance &rarr; Theme</b>.</p>
+  ]]></description>
+
+  <change-notes><![CDATA[
+    <ul><li>1.0.0 — Initial release: IDE theme + matching editor color scheme.</li></ul>
+  ]]></change-notes>
+
+  <!-- Themes are UI-only; compatible with all IntelliJ-platform IDEs. -->
+  <depends>com.intellij.modules.platform</depends>
+
+  <idea-version since-build="223"/>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <themeProvider id="com.madeofcode.theme"
+                   path="/theme/madeofcode.theme.json"/>
+  </extensions>
+</idea-plugin>
