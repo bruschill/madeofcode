@@ -20,6 +20,18 @@ To install:
 
 It's a dark scheme (parented on Darcula), so it inherits Darcula for any UI elements not explicitly themed.
 
+## Ghostty
+
+A matching color theme for the [Ghostty](https://ghostty.org) terminal lives in `ghostty/madeofcode`.
+
+To install, copy it into Ghostty's themes directory and reference it from your config:
+
+```sh
+mkdir -p ~/.config/ghostty/themes
+cp ghostty/madeofcode ~/.config/ghostty/themes/
+```
+
+Then add `theme = madeofcode` to `~/.config/ghostty/config`.
 ## Pi
 
 A matching theme for the [Pi](https://github.com/earendil-works/pi) coding agent lives in `pi/madeofcode.json`.
