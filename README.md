@@ -22,16 +22,40 @@ Copy `vim/colors/madeofcode.vim` into `~/.vim/colors/` (or `~/.config/nvim/color
 
 ### JetBrains IDEs
 
-A matching color scheme for IntelliJ IDEA, PyCharm, WebStorm, RubyMine, GoLand, and other JetBrains IDEs lives in `jetbrains/madeofcode.icls`.
+Matching themes for IntelliJ IDEA, PyCharm, WebStorm, RubyMine, GoLand, and other JetBrains IDEs live in `jetbrains/`:
 
-To install:
+- `jetbrains/madeofcode.icls` — the **editor color scheme** (syntax highlighting)
+- `jetbrains/madeofcode.theme.json` — the **IDE theme** (the whole UI: tool windows, tabs, menus, dialogs) that appears under **Appearance**
+
+#### Editor color scheme
 
 1. **Settings → Editor → Color Scheme**
 2. Click the gear icon → **Import Scheme…**
 3. Select `jetbrains/madeofcode.icls`
 4. Pick **madeofcode** from the scheme dropdown and apply.
 
-It's a dark scheme (parented on Darcula), so it inherits Darcula for any UI elements not explicitly themed.
+The editor scheme is dark (parented on Darcula), so it inherits Darcula for any editor elements not explicitly themed.
+
+#### IDE theme (Appearance) — installable plugin
+
+The UI theme in `jetbrains/madeofcode.theme.json` recolors the whole IDE chrome to match, and references the editor scheme above so both stay in sync. JetBrains loads UI themes from plugins, so `jetbrains/plugin/` packages it as one you can install directly.
+
+Build the plugin zip (no Gradle needed — a theme is pure resources, so it just needs a JDK on your `PATH` for `jar`):
+
+```sh
+cd jetbrains/plugin
+./build.sh
+```
+
+This produces `jetbrains/plugin/dist/madeofcode-theme-1.0.0.zip`. To install it:
+
+1. **Settings → Plugins**
+2. Click the gear icon → **Install Plugin from Disk…**
+3. Select `jetbrains/plugin/dist/madeofcode-theme-1.0.0.zip`
+4. Restart the IDE when prompted.
+5. Choose **madeofcode** under **Settings → Appearance & Behavior → Appearance → Theme**.
+
+Selecting the theme automatically applies the matching editor color scheme (via the `editorScheme` field in the theme). The build script regenerates the theme resources from the source `madeofcode.theme.json` and `madeofcode.icls`, so those two files remain the single source of truth.
 
 ## Terminals
 
