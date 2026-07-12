@@ -57,6 +57,27 @@ This produces `jetbrains/plugin/dist/madeofcode-theme-1.0.0.zip`. To install it:
 
 Selecting the theme automatically applies the matching editor color scheme (via the `editorScheme` field in the theme). The build script regenerates the theme resources from the source `madeofcode.theme.json` and `madeofcode.icls`, so those two files remain the single source of truth.
 
+### VS Code
+
+A matching color theme for [Visual Studio Code](https://code.visualstudio.com/) lives in `vscode/`, packaged as a theme extension.
+
+To use it without publishing, symlink (or copy) the `vscode/` folder into your VS Code extensions directory, then reload:
+
+```sh
+ln -s "$(pwd)/vscode" ~/.vscode/extensions/madeofcode
+```
+
+Then open the Command Palette → **Preferences: Color Theme** → **madeofcode**.
+
+To build a shareable `.vsix` instead, install [`vsce`](https://github.com/microsoft/vscode-vsce) and package it:
+
+```sh
+cd vscode
+npx @vscode/vsce package
+```
+
+That produces `madeofcode-1.0.0.vsix`, installable via **Extensions → … → Install from VSIX…**. The theme's syntax colors are derived from the vim colorscheme, which is the source of truth for the palette.
+
 ## Terminals
 
 ### kitty
