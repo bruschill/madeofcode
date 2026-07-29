@@ -1,19 +1,24 @@
 <idea-plugin>
   <id>com.madeofcode.theme</id>
   <name>madeofcode</name>
-  <version>1.0.0</version>
+  <version>1.1.0</version>
   <vendor>madeofcode</vendor>
 
   <description><![CDATA[
     <p><b>madeofcode</b> — a dark theme on a deep indigo background with vivid,
     high-contrast accents. Reproduces the TextMate theme madeofcode across
     JetBrains IDEs, theming both the editor syntax and the full IDE UI.</p>
-    <p>After installing, select <b>madeofcode</b> under
+    <p>Ships three variants: <b>madeofcode</b>, plus colorblind-safe
+    <b>madeofcode-protan</b> and <b>madeofcode-tritan</b>.</p>
+    <p>After installing, select one under
     <b>Settings &rarr; Appearance &amp; Behavior &rarr; Appearance &rarr; Theme</b>.</p>
   ]]></description>
 
   <change-notes><![CDATA[
-    <ul><li>1.0.0 — Initial release: IDE theme + matching editor color scheme.</li></ul>
+    <ul>
+      <li>1.1.0 — Package the protan and tritan colorblind-safe variants.</li>
+      <li>1.0.0 — Initial release: IDE theme + matching editor color scheme.</li>
+    </ul>
   ]]></change-notes>
 
   <!-- Themes are UI-only; compatible with all IntelliJ-platform IDEs. -->
@@ -24,5 +29,9 @@
   <extensions defaultExtensionNs="com.intellij">
     <themeProvider id="com.madeofcode.theme"
                    path="/theme/madeofcode.theme.json"/>
+    <themeProvider id="com.madeofcode.theme.protan"
+                   path="/theme/madeofcode-protan.theme.json"/>
+    <themeProvider id="com.madeofcode.theme.tritan"
+                   path="/theme/madeofcode-tritan.theme.json"/>
   </extensions>
 </idea-plugin>
