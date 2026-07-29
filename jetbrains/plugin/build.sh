@@ -22,12 +22,13 @@ echo "Building ${PLUGIN_NAME} theme plugin v${VERSION}"
 rm -rf "$BUILD" "$DIST"
 mkdir -p "$RES/theme" "$BUILD/lib" "$DIST"
 
-# Copy the editor color scheme verbatim.
-cp "$SRC/madeofcode.icls" "$RES/theme/madeofcode.icls"
-
-# Copy the UI theme, pointing editorScheme at the in-plugin resource path.
-sed 's#"editorScheme": *"[^"]*"#"editorScheme": "/theme/madeofcode.icls"#' \
-    "$SRC/madeofcode.theme.json" > "$RES/theme/madeofcode.theme.json"
+# For each variant: copy the editor color scheme verbatim, and copy the UI
+# theme with editorScheme rewritten to the in-plugin resource path.
+for variant in madeofcode madeofcode-protan madeofcode-tritan; do
+  cp "$SRC/${variant}.icls" "$RES/theme/${variant}.icls"
+  sed "s#\"editorScheme\": *\"[^\"]*\"#\"editorScheme\": \"/theme/${variant}.icls\"#" \
+      "$SRC/${variant}.theme.json" > "$RES/theme/${variant}.theme.json"
+done
 
 # Jar the resources (plugin.xml + theme files).
 jar --create --file "$BUILD/lib/${PLUGIN_NAME}-theme.jar" -C "$RES" .

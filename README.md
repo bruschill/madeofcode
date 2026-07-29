@@ -74,7 +74,7 @@ The editor scheme is dark (parented on Darcula), so it inherits Darcula for any 
 
 #### IDE theme (Appearance) — installable plugin
 
-The UI theme in `jetbrains/madeofcode.theme.json` recolors the whole IDE chrome to match, and references the editor scheme above so both stay in sync. JetBrains loads UI themes from plugins, so `jetbrains/plugin/` packages it as one you can install directly.
+The UI theme in `jetbrains/madeofcode.theme.json` recolors the whole IDE chrome to match, and references the editor scheme above so both stay in sync. JetBrains loads UI themes from plugins, so `jetbrains/plugin/` packages it as one you can install directly. The plugin bundles all three variants — **madeofcode**, **madeofcode-protan**, and **madeofcode-tritan** — each with its matching editor scheme.
 
 Build the plugin zip (no Gradle needed — a theme is pure resources, so it just needs a JDK on your `PATH` for `jar`):
 
@@ -83,15 +83,15 @@ cd jetbrains/plugin
 ./build.sh
 ```
 
-This produces `jetbrains/plugin/dist/madeofcode-theme-1.0.0.zip`. To install it:
+This produces `jetbrains/plugin/dist/madeofcode-theme-1.1.0.zip`. To install it:
 
 1. **Settings → Plugins**
 2. Click the gear icon → **Install Plugin from Disk…**
-3. Select `jetbrains/plugin/dist/madeofcode-theme-1.0.0.zip`
+3. Select `jetbrains/plugin/dist/madeofcode-theme-1.1.0.zip`
 4. Restart the IDE when prompted.
-5. Choose **madeofcode** under **Settings → Appearance & Behavior → Appearance → Theme**.
+5. Choose **madeofcode** (or **madeofcode-protan** / **madeofcode-tritan**) under **Settings → Appearance & Behavior → Appearance → Theme**.
 
-Selecting the theme automatically applies the matching editor color scheme (via the `editorScheme` field in the theme). The build script regenerates the theme resources from the source `madeofcode.theme.json` and `madeofcode.icls`, so those two files remain the single source of truth.
+Selecting a theme automatically applies its matching editor color scheme (via the `editorScheme` field in the theme). The build script regenerates the theme resources from the source `*.theme.json` and `*.icls` files in `jetbrains/`, so those remain the single source of truth.
 
 ### VS Code
 
