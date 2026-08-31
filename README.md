@@ -35,6 +35,7 @@ See the [full color breakdown](#color-breakdown) for the complete palette.
   - [Windows Terminal](#windows-terminal)
 - [Tools](#tools)
   - [Pi](#pi)
+  - [Herdr](#herdr)
 - [Web](#web)
 - [Color breakdown](#color-breakdown)
   - [Accessibility](#accessibility)
@@ -248,6 +249,20 @@ cp pi/madeofcode.json ~/.pi/agent/themes/
 ```
 
 Then select **madeofcode** as your theme in Pi. It reuses the same palette and syntax colors as the Vim and JetBrains schemes.
+
+### Herdr
+
+A matching theme for [Herdr](https://herdr.dev), the terminal workspace manager for AI coding agents, lives in `herdr/madeofcode.toml`.
+
+Herdr themes are config overrides rather than standalone files: append the block to your Herdr config, then reload.
+
+```sh
+cat herdr/madeofcode.toml >> ~/.config/herdr/config.toml   # macOS/Linux
+```
+
+On Windows, append it to `%APPDATA%\herdr\config.toml` instead. Apply it with `herdr server reload-config` (or **reload config** from Herdr's global menu) without restarting panes.
+
+Colorblind-safe variants are available as `herdr/madeofcode-protan.toml` and `herdr/madeofcode-tritan.toml`.
 
 ## Web
 

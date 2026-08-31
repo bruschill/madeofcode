@@ -1,0 +1,29 @@
+# madeofcode-tritan — theme snippet for Herdr (https://herdr.dev), colorblind-safe variant.
+# Derived from the madeofcode TextMate/Vim theme.
+# Install: append this block to ~/.config/herdr/config.toml (macOS/Linux)
+# or %APPDATA%\herdr\config.toml (Windows), then run
+# `herdr server reload-config` (or "reload config" from Herdr's global menu).
+
+[theme]
+name = "catppuccin"
+
+[theme.custom]
+panel_bg    = "#090a1b"
+surface_dim = "#12152e"
+surface0    = "#1c1e30"
+surface1    = "#363745"
+overlay0    = "#353c4f"
+overlay1    = "#545454"
+subtext0    = "#81818a"
+text        = "#f8f8f8"
+accent      = "#00d3a0"
+mauve       = "#c050c2"
+green       = "#4fd06a"
+yellow      = "#ff9d33"
+red         = "#ff3854"
+blue        = "#ff7ab0"
+teal        = "#c7f06a"
+peach       = "#cf6a4c"
+
+[ui]
+accent = "#00d3a0"
