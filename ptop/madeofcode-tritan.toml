@@ -1,0 +1,33 @@
+format = 1
+name = "madeofcode-tritan"
+
+[colors]
+main_bg = "#090a1b"
+main_fg = "#f8f8f8"
+title = "#f8f8f8"
+hi_fg = "#ff3854"
+selected_bg = "#05448d"
+selected_fg = "#ffffff"
+inactive_fg = "#81818a"
+graph_text = "#81818a"
+meter_bg = "#363745"
+proc_misc = "#c7f06a"
+div_line = "#363745"
+session_id = "#cf9f5a"
+status_fg = "#ff3854"
+warning_fg = "#cf9f5a"
+cpu_box = "#00d3a0"
+mem_box = "#c050c2"
+net_box = "#ff7ab0"
+proc_box = "#ff3854"
+claude_agent = "#cf6a4c"
+codex_agent = "#e06a3a"
+opencode_agent = "#4fd06a"
+pi_agent = "#c050c2"
+
+[gradients]
+cpu = ["#4fd06a", "#ff9d33", "#ff3854"]
+process = ["#c7f06a", "#cf9f5a", "#ff3854"]
+used = ["#12152e", "#cf6a4c", "#ff3854"]
+free = ["#090a1b", "#a8c0a0", "#4fd06a"]
+cached = ["#12152e", "#ff7ab0", "#00d3a0"]
