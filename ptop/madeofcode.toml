@@ -1,0 +1,33 @@
+format = 1
+name = "madeofcode"
+
+[colors]
+main_bg = "#090a1b"
+main_fg = "#f8f8f8"
+title = "#f8f8f8"
+hi_fg = "#ff3854"
+selected_bg = "#05448d"
+selected_fg = "#ffffff"
+inactive_fg = "#81818a"
+graph_text = "#81818a"
+meter_bg = "#363745"
+proc_misc = "#00ffbc"
+div_line = "#363745"
+session_id = "#e9c062"
+status_fg = "#ff3854"
+warning_fg = "#e9c062"
+cpu_box = "#6fd3ff"
+mem_box = "#c050c2"
+net_box = "#0a9cff"
+proc_box = "#ff3854"
+claude_agent = "#cf6a4c"
+codex_agent = "#588aff"
+opencode_agent = "#8fff58"
+pi_agent = "#c050c2"
+
+[gradients]
+cpu = ["#8fff58", "#f1d950", "#ff3854"]
+process = ["#00ffbc", "#e9c062", "#ff3854"]
+used = ["#12152e", "#cf6a4c", "#ff3854"]
+free = ["#090a1b", "#99cf50", "#8fff58"]
+cached = ["#12152e", "#0a9cff", "#6fd3ff"]

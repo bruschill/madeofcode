@@ -1,0 +1,33 @@
+format = 1
+name = "madeofcode-protan"
+
+[colors]
+main_bg = "#090a1b"
+main_fg = "#f8f8f8"
+title = "#f8f8f8"
+hi_fg = "#ffc21f"
+selected_bg = "#05448d"
+selected_fg = "#ffffff"
+inactive_fg = "#81818a"
+graph_text = "#81818a"
+meter_bg = "#363745"
+proc_misc = "#8fb4ff"
+div_line = "#363745"
+session_id = "#d9a441"
+status_fg = "#ffc21f"
+warning_fg = "#d9a441"
+cpu_box = "#b9dcff"
+mem_box = "#7d84b8"
+net_box = "#2f7bff"
+proc_box = "#ffc21f"
+claude_agent = "#a8863a"
+codex_agent = "#0a3d91"
+opencode_agent = "#e8e6de"
+pi_agent = "#7d84b8"
+
+[gradients]
+cpu = ["#e8e6de", "#b07400", "#ffc21f"]
+process = ["#8fb4ff", "#d9a441", "#ffc21f"]
+used = ["#12152e", "#a8863a", "#ffc21f"]
+free = ["#090a1b", "#c9cbd6", "#e8e6de"]
+cached = ["#12152e", "#2f7bff", "#b9dcff"]

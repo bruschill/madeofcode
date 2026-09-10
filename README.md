@@ -35,6 +35,7 @@ See the [full color breakdown](#color-breakdown) for the complete palette.
   - [Windows Terminal](#windows-terminal)
 - [Tools](#tools)
   - [Pi](#pi)
+  - [ptop](#ptop)
 - [Web](#web)
 - [Color breakdown](#color-breakdown)
   - [Accessibility](#accessibility)
@@ -248,6 +249,16 @@ cp pi/madeofcode.json ~/.pi/agent/themes/
 ```
 
 Then select **madeofcode** as your theme in Pi. It reuses the same palette and syntax colors as the Vim and JetBrains schemes.
+
+### ptop
+
+Matching themes for the [ptop](https://github.com/bruschill/ptop) terminal monitor live in `ptop/`. Load one directly with `--theme-file`:
+
+```sh
+ptop --theme-file ptop/madeofcode.toml
+```
+
+Use `ptop/madeofcode-protan.toml` or `ptop/madeofcode-tritan.toml` for a colorblind-safe variant. To keep the selection, set `theme_file` to the file's path in ptop's `config.toml`.
 
 ## Web
 
